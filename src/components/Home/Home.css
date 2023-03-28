@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+.home {
+  display: flex;
+  background: url("/src/assets/img/Viajes_Hero.jpg") no-repeat padding-box;
+  background-size: cover;
+  background-position: 40% center;
+  min-height: 100vh;
+}
+
+.linea-horizontal{
+  border-bottom: 3px solid white;
+  max-width: 580px !important;
+}
+
+.section {
+  margin-top: 150px;
+}
+
+.portada-container {
+  color: white;
+  transition: all 0.3s;
+}
+.portada-principal {
+  padding-top: 8%;
+  padding-left: 200px;
+  transition: all 0.5s;
+}
+
+.portada-tittle {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+
+.portada-subtittle {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.portada-body {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.portada-baja {
+  padding-top: 10%;
+  margin-bottom: 40px;
+}
+
+.slider {
+  transition: all 0.5s;
+  margin-left: -15px;
+}
+
+.contenedor-slider {
+  display: flex;
+  align-items: end;
+}
+
+.contenedor-de-rectangulo {
+  display: flex;
+  justify-content: end;
+}
+
+.rectangulo {
+  color: white;
+  background-color: #2a3037bd;
+  border: 2px dashed #2a303770;
+  border: 2px dashed #ffffff;
+  margin-right: 50px;
+  padding: 35px 20px 35px;
+  border-radius: 6px;
+}
+
+.rectangulo-tittle {
+  font-size: 18px;
+  color: #fa6980;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.rectangulo-subtittle {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.rectangulo-body {
+  font-size: 15px;
+}
+
+@media (max-width: 990px) {
+  .portada-principal {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portada-principal {
+    padding: 100px 25px 50px;
+    margin-bottom: 0;
+  }
+  .portada-body {
+    display: none;
+  }
+  .portada-tittle {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  .portada-tittle img {
+    width: 12px;
+    height: 17px;
+  }
+  .portada-subtittle {
+    font-size: 20px;
+  }
+  .slider {
+    margin-top: 120px;
+    margin-left: -100px;
+  }
+  .rectangulo {
+    display: none;
+  }
+
+  .section {
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+}

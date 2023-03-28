@@ -1,0 +1,21 @@
+My React App
+Este proyecto fue creado con npm create vite@latest.
+
+Instalación
+Para instalar este proyecto, es necesario tener Node.js instalado en su computadora. Puede descargar Node.js desde aquí.
+
+Una vez que Node.js esté instalado, siga estos pasos:
+
+Clone el repositorio en su computadora.
+Navegue hasta el directorio del proyecto.
+Ejecute el comando npm install para instalar las dependencias del proyecto.
+Ejecución
+Para ejecutar el servidor de desarrollo local, ejecute el comando npm run dev. Esto iniciará la aplicación en modo de desarrollo en su navegador.
+
+Abra http://localhost:5173 para verlo en el navegador.
+
+La página se recargará automáticamente si realiza cambios en el código fuente.
+
+Construcción para producción
+Para construir la aplicación para producción, ejecute el comando npm run build. Esto construirá la aplicación para producción en el directorio build.
+

@@ -1,0 +1,28 @@
+.card {
+  box-shadow: 0px 3px 6px #00000029;
+  position: inherit;
+ 
+}
+.c-body {
+  border-radius: 6px;
+  padding: 40px;
+  position: relative;
+
+}
+
+
+.etiqueta {
+  color: white;
+  background-color: #fa6980;
+  border-radius: 6px;
+  width: 83px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -20px;
+  font-size: 16px;
+}
+
+

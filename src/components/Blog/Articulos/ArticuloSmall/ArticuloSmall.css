@@ -1,0 +1,37 @@
+.articuloSmall {
+  font-size: 16px;
+  color: #202124;
+}
+
+.articuloSmall img {
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.time2 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+}
+.time2 img{
+    margin: 0;
+}
+
+.time2 p {
+  margin-bottom: 0;
+  color: #CBD0D3;
+  font-size: 13px;
+}
+.articleOf2{
+    margin-bottom: 0;
+}
+
+@media (max-width: 990px) {
+    .articuloSmall{
+        display: none;
+    }
+}
+
+
