@@ -7,14 +7,14 @@ export const Cards = () => {
   const numRandom = Math.floor(Math.random() * 9);
   const query = "landscape";
   const fetchedData = useFetch(
-    `https://api.pexels.com/v1/search?query=${query}&page=2&per_page=${numRandom}`
+    `https://api.pexels.com/v1/search?query=${query}&page=3&per_page=${numRandom}`
   );
-  console.log(fetchedData.fetchedData.photos);
+  console.log(fetchedData.fetchedData.photos?.[2]);
 
   const imagesURL = [
-    fetchedData.fetchedData.photos?.[0].src.original,
-    fetchedData.fetchedData.photos?.[1].src.original,
-    fetchedData.fetchedData.photos?.[2].src.original,
+    fetchedData.fetchedData.photos?.[0].src.tiny,
+    fetchedData.fetchedData.photos?.[1].src.tiny,
+    fetchedData.fetchedData.photos?.[2].src.tiny,
   ];
 
   const cards = [
