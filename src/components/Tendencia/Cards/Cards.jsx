@@ -1,16 +1,27 @@
 import React from "react";
 import { Card } from "../Card/Card";
 
-import image1 from "/src/assets/img/card_01.png";
-import image2 from "/src/assets/img/card_02.png";
-import image3 from "/src/assets/img/card_03.png";
+import { useFetch } from "../../hooks/useFetch";
 
 export const Cards = () => {
+  const numRandom = Math.floor(Math.random() * 9);
+  const query = "landscape";
+  const fetchedData = useFetch(
+    `https://api.pexels.com/v1/search?query=${query}&page=2&per_page=${numRandom}`
+  );
+  console.log(fetchedData.fetchedData.photos);
+
+  const imagesURL = [
+    fetchedData.fetchedData.photos?.[0].src.original,
+    fetchedData.fetchedData.photos?.[1].src.original,
+    fetchedData.fetchedData.photos?.[2].src.original,
+  ];
+
   const cards = [
     {
       id: 1,
       tittle: "Montañas y magia",
-      image: image1,
+      image: imagesURL[0],
       text: (
         <p>
           Aquí la descripción para{" "}
@@ -21,7 +32,7 @@ export const Cards = () => {
     {
       id: 2,
       tittle: "Playas y sol",
-      image: image2,
+      image: imagesURL[1],
       text: (
         <p>
           La descripción de <span className="fw-bold"> Playas y sol </span> debe
@@ -32,7 +43,7 @@ export const Cards = () => {
     {
       id: 3,
       tittle: "Nieve y aventuras",
-      image: image3,
+      image: imagesURL[2],
       text: (
         <p>
           Contiene la información de{" "}

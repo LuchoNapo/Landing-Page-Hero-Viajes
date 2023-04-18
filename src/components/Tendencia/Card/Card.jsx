@@ -14,7 +14,7 @@ export const Card = ({ tittle, imageSource, text }) => {
     window.addEventListener("resize", updateDimension);
     return () => window.removeEventListener("resize", updateDimension);
   }, []);
-  
+
   //Media Query CSS
   if (tittle != "Montañas y magia" && width < 990) {
     return <div className="card display:none border-0"></div>;
